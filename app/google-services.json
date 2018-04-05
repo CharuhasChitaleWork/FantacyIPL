@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "161880530684",
+    "firebase_url": "https://fantasy-ipl.firebaseio.com",
+    "project_id": "fantasy-ipl",
+    "storage_bucket": "fantasy-ipl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161880530684:android:27b46efa7d874b56",
+        "android_client_info": {
+          "package_name": "com.fipl.charuhaschitale.fantacy_ipl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161880530684-mbjcit23bl0qdaf36kdcalt0mu3cehii.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fipl.charuhaschitale.fantacy_ipl",
+            "certificate_hash": "6b5d17879f60203308018ad9479b6db7fecf9398"
+          }
+        },
+        {
+          "client_id": "161880530684-eofeu4ava8mvo4k3cm8vmj9ksudm7sq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTLe2x-GzxTozMwoNL03NW6x684LSzs8M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161880530684-eofeu4ava8mvo4k3cm8vmj9ksudm7sq6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
