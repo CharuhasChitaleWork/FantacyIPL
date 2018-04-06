@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "";
     Button login,register;
         EditText email,pass;
-        TextView singup;
+        TextView singup,talabel ;
     private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         login = (Button) findViewById(R.id.buttonLogin);
         email =(EditText) findViewById(R.id.editTextEmail);
         pass =(EditText) findViewById(R.id.editTextPass);
+        talabel = (TextView) findViewById(R.id.textViewError);
         singup = (TextView) findViewById(R.id.textViewSignup);
         register = (Button) findViewById(R.id.buttonSignup);
          login.setOnClickListener(new View.OnClickListener() {
@@ -75,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
                             Log.w(TAG, "createUserWithEmail:failure", task.getException());
                             Toast.makeText(MainActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
+                            talabel.setText("Try Again");
 
                         }
 
@@ -104,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
                              Toast.makeText(MainActivity.this,"Authentication failed.", Toast.LENGTH_SHORT).show();
-
+                            talabel.setText("Try Again");
                         }
 
                         // ...
