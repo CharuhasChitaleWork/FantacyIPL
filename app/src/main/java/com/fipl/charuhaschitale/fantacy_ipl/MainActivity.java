@@ -1,5 +1,7 @@
 package com.fipl.charuhaschitale.fantacy_ipl;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,9 +18,12 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import static android.app.PendingIntent.getActivity;
+
 public class MainActivity extends AppCompatActivity {
 
-        Button login;
+    private static final String TAG = "";
+    Button login,register;
         EditText email,pass;
         TextView singup;
     private FirebaseAuth mAuth;
@@ -31,35 +36,81 @@ public class MainActivity extends AppCompatActivity {
         email =(EditText) findViewById(R.id.editTextEmail);
         pass =(EditText) findViewById(R.id.editTextPass);
         singup = (TextView) findViewById(R.id.textViewSignup);
-
-        login.setOnClickListener(new View.OnClickListener() {
+        register = (Button) findViewById(R.id.buttonSignup);
+         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String emaill = email.getText().toString();
                 String password = pass.getText().toString();
-                mAuth.signInWithEmailAndPassword(emaill, password)
-                        .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                String TAG=null;
-                                if (task.isSuccessful()) {
-                                    // Sign in success, update UI with the signed-in user's information
-                                    Log.d(TAG, "signInWithEmail:success");
-                                    FirebaseUser user = mAuth.getCurrentUser();
-                                    updateUI(user);
-                                } else {
-                                    // If sign in fails, display a message to the user.
-                                    Log.w(TAG, "signInWithEmail:failure", task.getException());
-                                    Toast.makeText(EmailPasswordActivity.this, "Authentication failed.",
-                                            Toast.LENGTH_SHORT).show();
-                                    updateUI(null);
-                                }
+               Login(emaill,password);
 
-                                // ...
-                            }
-                        });
             }
         });
+            register.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String emaill = email.getText().toString();
+                    String password = pass.getText().toString();
+                  Resister(emaill,password);
+
+                }
+            });
+
+    }
+
+    private void Resister(String emaill, String password) {
+        mAuth.createUserWithEmailAndPassword(emaill, password)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            // Sign in success, update UI with the signed-in user's information
+                            Log.d(TAG, "createUserWithEmail:success");
+                            FirebaseUser user = mAuth.getCurrentUser();
+                            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                            startActivity(intent);
+
+                        } else {
+                            // If sign in fails, display a message to the user.
+                            Log.w(TAG, "createUserWithEmail:failure", task.getException());
+                            Toast.makeText(MainActivity.this, "Authentication failed.",
+                                    Toast.LENGTH_SHORT).show();
+
+                        }
+
+                        // ...
+                    }
+                });
+    }
+
+    private void Login(String emaill, String password) {
+
+        mAuth.signInWithEmailAndPassword(emaill, password)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+
+
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+
+                        if (task.isSuccessful()) {
+                            // Sign in success, update UI with the signed-in user's information
+                            Log.d(TAG, "signInWithEmail:success");
+                            FirebaseUser user = mAuth.getCurrentUser();
+                            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                            startActivity(intent);
+
+
+                        } else {
+                            // If sign in fails, display a message to the user.
+                            Log.w(TAG, "signInWithEmail:failure", task.getException());
+                             Toast.makeText(MainActivity.this,"Authentication failed.", Toast.LENGTH_SHORT).show();
+
+                        }
+
+                        // ...
+                    }
+                });
+
     }
 
     @Override
@@ -67,12 +118,16 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        updateUI(currentUser);
+        if(currentUser!=null){
+        Intent intent = new Intent(this, HomeActivity.class);
+        intent.putExtra("User",currentUser.getDisplayName());
+        startActivity(intent); }
+        else {
+
+        }
     }
 
-    private void updateUI(FirebaseUser currentUser) {
-        String uid= currentUser.getUid();
-    }
+
 
 
 }
