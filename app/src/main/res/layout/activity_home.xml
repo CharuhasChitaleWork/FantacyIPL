@@ -14,7 +14,7 @@
         android:layout_marginTop="50dp"
         >
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonJoinGroupe"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="JOIN Group"
@@ -23,10 +23,119 @@
         />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonCreateGroupe"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Create Group"
        />
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:id="@+id/Match1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Match 1"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+           android:fontFamily="sans-serif"
+            android:gravity="center"
+
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:id="@+id/Team1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team 1"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/TextviewVs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Vs "
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/Team2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team 2"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time : 3.15 PM"
+                        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:id="@+id/Match2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Match 2"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:id="@+id/Team21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team 1"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/TextviewVs2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Vs "
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/Team22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team 2"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time : 7 PM"
+            />
+    </LinearLayout>
 </LinearLayout>
+

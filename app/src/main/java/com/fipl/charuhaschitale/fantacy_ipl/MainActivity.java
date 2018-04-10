@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     Button login,register;
         EditText email,pass;
         TextView singup,talabel ;
+    boolean fl = false;
     private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                             startActivity(intent);
+                            finish();
 
                         } else {
                             // If sign in fails, display a message to the user.
@@ -100,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                             startActivity(intent);
-
+                            finish();
 
                         } else {
                             // If sign in fails, display a message to the user.
@@ -114,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
                 });
 
     }
+
 
     @Override
     public void onStart() {
