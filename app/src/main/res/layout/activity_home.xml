@@ -6,136 +6,155 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.fipl.charuhaschitale.fantacy_ipl.HomeActivity">
+
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        >
-    <Button
-        android:id="@+id/buttonJoinGroupe"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="JOIN Group"
-        android:padding="10dp"
-        android:elevation="10dp"
-        />
+        android:baselineAligned="false"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/buttonCreateGroupe"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="Create Group"
-       />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher_KKR" />
+
+        <LinearLayout
+            android:layout_width="143dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Match1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Match 1"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Team1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Team 1" />
+
+                <TextView
+                    android:id="@+id/TextviewVs"
+                    android:layout_width="34dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=" Vs " />
+
+                <TextView
+                    android:id="@+id/Team2"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Team 2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time : 3.15 PM" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher_KKR" />
     </LinearLayout>
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        >
-        <TextView
-            android:id="@+id/Match1"
+        android:layout_marginTop="50dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Match 1"
-            android:textAllCaps="true"
-            android:textColor="@color/colorPrimary"
-           android:fontFamily="sans-serif"
-            android:gravity="center"
+            android:src="@mipmap/ic_launcher_KKR" />
 
-            />
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_width="143dp"
+            android:layout_height="69dp"
             android:layout_gravity="center"
-            >
-            <TextView
-                android:id="@+id/Team1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Team 1"
-                android:gravity="center"
-                />
-            <TextView
-                android:id="@+id/TextviewVs"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" Vs "
-                android:gravity="center"
-                />
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/Team2"
+                android:id="@+id/Match2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Match 2"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+
+                />
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Team 2"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Team21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Team 1" />
+
+                <TextView
+                    android:id="@+id/TextviewVs2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=" Vs " />
+
+                <TextView
+                    android:id="@+id/Team22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Team 2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time : 7 PM"
                 android:gravity="center"
+                android:layout_marginLeft="13dp"
                 />
+
 
         </LinearLayout>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Time : 3.15 PM"
-                        />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        >
-        <TextView
-            android:id="@+id/Match2"
+
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Match 2"
-            android:textAllCaps="true"
-            android:textColor="@color/colorPrimary"
-            android:fontFamily="sans-serif"
-            android:gravity="center"
-
-            />
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center"
-            >
-            <TextView
-                android:id="@+id/Team21"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Team 1"
-                android:gravity="center"
-                />
-            <TextView
-                android:id="@+id/TextviewVs2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" Vs "
-                android:gravity="center"
-                />
-
-            <TextView
-                android:id="@+id/Team22"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Team 2"
-                android:gravity="center"
-                />
-
-        </LinearLayout>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Time : 7 PM"
-            />
+            android:src="@mipmap/ic_launcher_KKR" />
     </LinearLayout>
 </LinearLayout>
 
