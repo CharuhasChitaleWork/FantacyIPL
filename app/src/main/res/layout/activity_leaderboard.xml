@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+  >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:text="Static Leaderboard"
+        />
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id = "@+id/RHE"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            >
+
+            <TableRow android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/runLabel"
+                    android:text="Rank"
+                    android:layout_height="wrap_content"
+                    android:layout_width="45sp"
+                    android:layout_gravity="center"
+
+                    />
+                <TextView
+                    android:id="@+id/hitLabel"
+                    android:text="Name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="260sp"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/errorLabel"
+                    android:text="Points"
+                    android:layout_height="wrap_content"
+                    android:layout_width="78sp"
+                    android:layout_gravity="center"
+                    />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/visitorRuns"
+                    android:text="0"
+                    android:layout_height="wrap_content"
+
+                    />
+                <TextView
+                    android:id="@+id/visitorHits"
+                    android:text="0"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/visitorErrors"
+                    android:text="0"
+                    android:layout_height="wrap_content"
+                    />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/homeRuns"
+                    android:text="0"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/homeHits"
+                    android:text="0"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/homeErrors"
+                    android:text="0"
+                    android:layout_height="wrap_content"
+                    />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
