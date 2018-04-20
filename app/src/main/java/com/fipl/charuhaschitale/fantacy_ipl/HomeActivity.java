@@ -32,12 +32,15 @@ TextView team11,team12,team21,team22;
         team22 =(TextView) findViewById(R.id.Team22);
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
-      ref = mDatabase.child("realtime_fixtures").child("match1");
-        ref3 = ref.child("team1");
-        ref4 = ref.child("team2");
-      ref2 = mDatabase.child("realtime_fixtures").child("match2");
-            ref5 = ref.child("team1");
-            ref6 = ref.child("team2");
+      ref = mDatabase.child("realtime_fixtures").child("Match - 1");
+        ref3 = ref.child("Team - 1");
+        ref4 = ref.child("Team - 2");
+
+
+      ref2 = mDatabase.child("realtime_fixtures").child("Match - 2");
+            ref5 = ref2.child("Team - 1");
+            ref6 = ref2.child("Team - 2");
+
   ref3.addValueEventListener(new ValueEventListener() {
       @Override
       public void onDataChange(DataSnapshot dataSnapshot) {
