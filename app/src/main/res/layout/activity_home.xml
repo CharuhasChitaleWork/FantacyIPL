@@ -18,7 +18,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher_KKR" />
+            android:src="@mipmap/ic_launcher_mi" />
 
         <LinearLayout
             android:layout_width="143dp"
@@ -77,7 +77,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher_KKR" />
+            android:src="@mipmap/ic_launcher_mi" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -90,7 +90,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher_KKR" />
+            android:src="@mipmap/ic_launcher_mi" />
 
         <LinearLayout
             android:layout_width="143dp"
@@ -154,7 +154,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher_KKR" />
+            android:src="@mipmap/ic_launcher_mi" />
 
 
             />
