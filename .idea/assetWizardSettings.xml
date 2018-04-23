@@ -34,7 +34,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="C:\Users\Charuhas Chitale\Documents\200px-Kolkata_Knight_Riders_Logo.svg.png" />
+                                      <entry key="imageAsset" value="C:\Users\Charuhas Chitale\Documents\ipl-mumbai-indians-logo-5FD6E24965-seeklogo.com.png" />
                                       <entry key="outputName" value="ic_action_name_kkr" />
                                     </map>
                                   </option>
@@ -51,7 +51,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="61" />
+                                                <entry key="scalingPercent" value="65" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -66,17 +66,12 @@
                                       <entry key="backgroundLayerName" value="ic_launcher_background" />
                                       <entry key="foregroundImage" value="C:\Users\Charuhas Chitale\Documents\ipl-mumbai-indians-logo-5FD6E24965-seeklogo.com.png" />
                                       <entry key="foregroundLayerName" value="ic_launcher_foreground" />
-                                      <entry key="outputName" value="ic_launcher_MI" />
+                                      <entry key="outputName" value="ic_launcher_mi" />
                                     </map>
                                   </option>
                                 </PersistentState>
                               </value>
                             </entry>
-                          </map>
-                        </option>
-                        <option name="values">
-                          <map>
-                            <entry key="outputIconType" value="ACTIONBAR" />
                           </map>
                         </option>
                       </PersistentState>
